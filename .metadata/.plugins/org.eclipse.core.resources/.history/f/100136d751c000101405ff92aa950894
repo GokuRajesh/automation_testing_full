@@ -1,0 +1,10 @@
+package automationtesting;
+
+public class p3_clicklink {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

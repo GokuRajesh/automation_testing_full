@@ -1,0 +1,19 @@
+package Exercise_1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class q7 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		EdgeDriver driver=new EdgeDriver();
+		driver.get("https://demowebshop.tricentis.com");
+		WebElement giftcard=driver.findElement(By.xpath("Show details for $25 Virtual Gift Card"));
+		giftcard.click();
+		Thread.sleep(5000);
+		driver.quit();
+	}
+
+}

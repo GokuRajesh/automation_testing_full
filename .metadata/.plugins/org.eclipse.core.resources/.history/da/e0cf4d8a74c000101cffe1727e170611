@@ -1,0 +1,20 @@
+package Exercise_1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class q6 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver driver=new EdgeDriver();
+		driver.get("http://demowebshop.tricentis.com");
+		WebElement computer=driver.findElement(By.linkText("computers"));
+		computer.click();
+		Thread.sleep(5000);
+		driver.quit();
+	}
+
+}

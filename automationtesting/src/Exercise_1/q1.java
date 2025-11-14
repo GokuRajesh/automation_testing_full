@@ -1,0 +1,28 @@
+package Exercise_1;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class q1 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver driver=new EdgeDriver();
+		driver.get("https://advantageonlineshopping.com/");
+		Thread.sleep(3000);
+		String s=driver.getTitle();
+		System.out.println(s);
+	
+		String cleanedTitle = s.replace("\u00A0", " ").trim();
+		if(cleanedTitle.trim().equals("Advantage Shopping")) {
+			System.out.println("successfull verification");
+		}
+		else {
+			System.out.println("unsuccessful verification");
+			System.out.println(s+" "+"Advantage Shopping"+" "+s.trim().equalsIgnoreCase("Advantage Shopping"));
+		}
+		Thread.sleep(5000);
+		driver.quit();
+	}
+
+}
