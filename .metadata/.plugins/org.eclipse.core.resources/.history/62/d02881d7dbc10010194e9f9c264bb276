@@ -1,0 +1,58 @@
+package day3;
+
+import java.io.File;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+import jxl.Cell;
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.read.biff.BiffException;
+import zmq.ZError.IOException;
+
+public class xls_sheet {
+
+	public static void main(String[] args) throws java.io.IOException {
+		// TODO Auto-generated method stub
+		String excelFilePath="C:\\Selenium demo\\excelfile.xls";
+		Workbook workbook=null;
+		
+		try {
+			File file=new File(excelFilePath);
+			workbook=Workbook.getWorkbook(file);
+			Sheet sheet=workbook.getSheet(0);
+			int numrows=sheet.getRows();
+			int numColumns=sheet.getColumns();
+			WebDriver driver=new EdgeDriver();
+			driver.get("https://demowebshop.tricentis.com");
+			driver.findElement(By.linkText("Log in")).click();
+			for(int row=0;row<numrows;row++) {
+				for(int col=0;col<numColumns;col++) {
+					Cell cell=sheet.getCell(col,row);
+					String cellContent=cell.getContents();
+					
+					if(col==0) {
+						driver.findElement(By.id("Email")).sendKeys(cellContent);
+					}
+					if(col==1) {
+						driver.findElement(By.id("Password")).sendKeys(cellContent);
+					}
+				}
+			}
+		}
+		catch(BiffException e) {
+			e.printStackTrace();
+		}
+		catch(IOException e) {
+			e.printStackTrace();
+		}
+		finally {
+			if(workbook!=null) {
+				workbook.close();
+			}
+		}
+	}
+
+}

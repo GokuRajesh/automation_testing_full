@@ -1,0 +1,42 @@
+package day3;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class xlsx_sheet {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver=new EdgeDriver();
+		try {
+			FileInputStream file=new FileInputStream("C:\\Selenium demo\\excelfile.xlsx");
+			XSSFWorkbook workbook=new XSSFWorkbook(file);
+			XSSFSheet sheet=workbook.getSheetAt(0);
+			Iterator<row> rowIterator=sheet.iterator();
+			while(rowIterator.hasNext()) {
+				Row row=rowIterator.next();
+				Iterator<Cell> cellIterator=row.cellIterator();
+				while(cellIterator.hasNext()) {
+					Cell cell=cellIterator.next();
+					switch (cell.getCellType()) {
+					case STRING:
+						System.out.println(cell.getStringCellValue()+"\t");
+						break
+					case NUMERIC:
+						System.out.println(cell.getNumericCellValue()+"\t");
+						break;
+					default;
+						break;
+					}
+				}
+			}
+			System.out.println();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}
