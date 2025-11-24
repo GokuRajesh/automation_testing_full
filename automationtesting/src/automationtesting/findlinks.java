@@ -9,7 +9,7 @@ public class findlinks {
 		// TODO Auto-generated method stub
 		WebDriver driver=new EdgeDriver();
 		driver.get("https://demowebshop.tricentis.com");
-		List<WebElement> links=driver.findElements(By.tagName(null))
+		List<WebElement> links=driver.findElements(By.tagName(null));
 	}
 
 }

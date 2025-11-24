@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-20T14:19:38 IST" name="Suite" finished-at="2025-11-20T14:19:38 IST" duration-ms="121">
+    <groups>
+    </groups>
+    <test started-at="2025-11-20T14:19:38 IST" name="Test1" finished-at="2025-11-20T14:19:38 IST" duration-ms="59">
+      <class name="tc1">
+        <test-method signature="f()[pri:0, instance:tc1@557caf28]" started-at="2025-11-20T14:19:38 IST" name="f" finished-at="2025-11-20T14:19:38 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- tc1 -->
+    </test> <!-- Test1 -->
+    <test started-at="2025-11-20T14:19:38 IST" name="Test2" finished-at="2025-11-20T14:19:38 IST" duration-ms="9">
+      <class name="tc2">
+        <test-method signature="f()[pri:0, instance:tc2@3c9754d8]" started-at="2025-11-20T14:19:38 IST" name="f" finished-at="2025-11-20T14:19:38 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- tc2 -->
+    </test> <!-- Test2 -->
+    <test started-at="2025-11-20T14:19:38 IST" name="reporter" finished-at="2025-11-20T14:19:38 IST" duration-ms="2">
+      <class name="reporter">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:reporter@79079097]" started-at="2025-11-20T14:19:38 IST" name="beforeSuite" finished-at="2025-11-20T14:19:38 IST" duration-ms="216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:reporter@79079097]" started-at="2025-11-20T14:19:38 IST" name="afterSuite" finished-at="2025-11-20T14:19:38 IST" duration-ms="326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- reporter -->
+    </test> <!-- reporter -->
+  </suite> <!-- Suite -->
+</testng-results>

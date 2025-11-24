@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="exercise_reporter.tc1_buyFish"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test2">
+    <classes>
+      <class name="exercise_reporter.tc2_buyDog"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test3">
+    <classes>
+      <class name="exercise_reporter.tc3_buyCats"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="reporter">
+    <classes>
+      <class name="reporter"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="tc1_login"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test2">
+    <classes>
+      <class name="tc2_search"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test3">
+    <classes>
+      <class name="tc3"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test4">
+    <classes>
+      <class name="tc4"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test5">
+    <classes>
+      <class name="tc5"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="reporter">
+    <classes>
+      <class name="reporter"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

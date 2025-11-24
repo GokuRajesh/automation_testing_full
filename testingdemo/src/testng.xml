@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="Suite">
+  <test name="Test">
+    <classes>
+      <class name="tc01"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test2">
+    <classes>
+      <class name="tc02"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test3">
+    <classes>
+      <class name="tc03"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="reporter">
+    <classes>
+      <class name="reporter"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

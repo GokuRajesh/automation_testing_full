@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-20T10:09:19 IST" name="Suite" finished-at="2025-11-20T10:09:19 IST" duration-ms="185">
+    <groups>
+    </groups>
+    <test started-at="2025-11-20T10:09:19 IST" name="Test2" finished-at="2025-11-20T10:09:19 IST" duration-ms="76">
+      <class name="demo_maven.NewTest2">
+        <test-method signature="f()[pri:0, instance:demo_maven.NewTest2@4f83df68]" started-at="2025-11-20T10:09:19 IST" name="f" finished-at="2025-11-20T10:09:19 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- demo_maven.NewTest2 -->
+    </test> <!-- Test2 -->
+    <test started-at="2025-11-20T10:09:19 IST" name="Test" finished-at="2025-11-20T10:09:19 IST" duration-ms="12">
+      <class name="demo_maven.NewTest">
+        <test-method signature="f()[pri:0, instance:demo_maven.NewTest@815b41f]" started-at="2025-11-20T10:09:19 IST" name="f" finished-at="2025-11-20T10:09:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- demo_maven.NewTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
