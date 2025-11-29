@@ -21,7 +21,7 @@ public class tc2_searchValidProducts extends reportgenerator {
 	homePage home=new homePage(hooks.driver);
 	@When("he searches product in category all as {string}")
 	public void he_searches_product_in_category_all(String product) {
-		logger=extent.startTest("search valid products test");
+		logger=extent.startTest("Search valid products test");
 		home.search(product);
 		home.clickSearch();
 	    System.out.println("searches product in caregory all"+product);
@@ -31,11 +31,11 @@ public class tc2_searchValidProducts extends reportgenerator {
 	public void he_should_be_able_to_view_the_product(String product) { 
 		try {
 			hooks.driver.findElement(By.linkText(product));
-			logger.log(LogStatus.PASS, "search valid product test passed");
+			logger.log(LogStatus.PASS, "Search valid product test passed");
 			assertTrue(true);
 		}
 		catch(Exception e) {
-			logger.log(LogStatus.FAIL, "search valid product test fail");
+			logger.log(LogStatus.FAIL, "Search valid product test fail");
 			assertTrue(false);
 		}
 		finally {

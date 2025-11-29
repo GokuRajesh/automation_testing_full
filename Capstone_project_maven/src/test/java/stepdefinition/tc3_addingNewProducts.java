@@ -28,7 +28,7 @@ public class tc3_addingNewProducts extends reportgenerator {
 	}
 	@When("he adds the product in the product list as {string} ,{string} and {string}")
 	public void he_adds_the_new_product_in_the_product_list(String category,String name,String price) {
-		logger=extent.startTest("add the products test");
+		logger=extent.startTest("Add the products test");
 		menu.navigateToProdcuts();
 		menu.addNew();
 		menu.editStoreProductsCategory(category);
@@ -43,11 +43,11 @@ public class tc3_addingNewProducts extends reportgenerator {
 		menu.findProduct(name,category);
 		try {
 			hooks.driver.findElement(By.linkText(name));
-			logger.log(LogStatus.PASS, "add the product test passed");
+			logger.log(LogStatus.PASS, "Add the product test passed");
 			assertTrue(true);
 		}
 		catch(Exception e) {
-			logger.log(LogStatus.FAIL, "add the product test failed");
+			logger.log(LogStatus.FAIL, "Add the product test failed");
 			assertTrue(false);
 		}
 		finally {
